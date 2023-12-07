@@ -6,33 +6,41 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <h1 class=" text-center fw-bold my-5">Todo</h1>
-
+ <div class="container">
+  
+  <h1 class="title text-center fw-bold my-5">Todo</h1>
+  
   <form class=" w-50 mx-auto p-3 border rounded-2 js-form ">
-   <div class="input-group border-2 rounded p-1">
-    <input class="form-control border-2 rounded-2 p-2 js-inp" type="text" placeholder="todo..." required>
-    <button type="submit" class="btn btn-info rounded-2 ms-3 get-btn
-    ">submit</button>
-   </div>
+    <button type="button" class="btn d-block me-auto ms-auto button-dark">dark</button>
+    <div class="input-group border-2 rounded p-1">
+      <input class="form-control border-2 rounded-2 p-2 js-inp" type="text" placeholder="todo..." required>
+      <button type="submit" class="btn btn-info rounded-2 ms-3 get-btn
+      ">submit</button>
+    </div>
   
     <div class="text-center mt-4 d-flex gap-5 wrapper ">
-      <button type="button" class="btn btn-primary position-relative w-25 btn-all">All <span class="span-all position-absolute top-0 end-0 p-1 pe-2 ps-2 d-block ">0</span></button>
-
-      <button type="button" class="btn btn-danger position-relative w-25 btn-done">done <span class="span-done position-absolute top-0 end-0  p-1 pe-2 ps-2 d-block ">0</span></button>
-
-      <button type="button" class="btn btn-warning position-relative w-25 btn-not-done">not done <span class=" span-not-done position-absolute top-0 end-0 p-1 pe-2 ps-2 d-block  ">0</span></button>
-
-      <button type="button" class="btn btn-danger position-relative w-25 deleted-ones">deleted ones<span
+      <button type="button" class="btn btn-primary position-relative w-25 btn-all">All <span
+          class="span-all position-absolute top-0 end-0 p-1 pe-2 ps-2 d-block ">0</span></button>
+  
+      <button type="button" class="btn btn-danger position-relative w-25 btn-done">done <span
+          class="span-done position-absolute top-0 end-0  p-1 pe-2 ps-2 d-block ">0</span></button>
+  
+      <button type="button" class="btn btn-warning position-relative w-25 btn-not-done">not done <span
+          class=" span-not-done position-absolute top-0 end-0 p-1 pe-2 ps-2 d-block  ">0</span></button>
+  
+      <button type="button" class="btn btn-danger position-relative w-25 deleted-ones">deleted<span
           class="span-deleted-ones position-absolute top-0 end-0  p-1 pe-2 ps-2 d-block ">0</span></button>
     </div>
   
   
   </form>
   <ul class=" list-group w-50 mx-auto mt-3 js-list">
-   
+  
   </ul>
+ </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
